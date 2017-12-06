@@ -3,8 +3,8 @@ class Appointment
 
   def initialize(date, patient)
     @date = date
-    @patient = patient
-    @add_appointment.patient
+    @doctor = doctor
+    @doctor.add_appointment(self)
 
   end
 end
