@@ -16,4 +16,10 @@ class Patient
     @appointments
   end
 
+  def doctors
+    self.appointments.collect do |app|
+      app.doctors
+  end
+end
+
 end
